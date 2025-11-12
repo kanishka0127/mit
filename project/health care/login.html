@@ -1,0 +1,100 @@
+<!DOCTYPE html>5, 255, 0.9);
+        border: 2px solid #f39292; /* Change border color to dark blue */
+        justify-content: left; /* Center the card horizontally */
+        border-radius: 40px;
+        
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Welcome to login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+   
+
+    <style>
+        body {
+            /* background-image: url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=740&t=st=1710323114~exp=1710323714~hmac=4198ba19d07fb3173df86766278d35a5c5d2bcd461f6045395db9e1e15b9a01c'); */
+            background-image: url('https://i.pinimg.com/originals/c1/e4/9c/c1e49c23d3a17dcc45833d4028e45a3f.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+        width: 100%;
+        max-width: 400px;
+        background-color: #f0eaea(255, 25)
+        }
+
+        .gradient-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Adjust button width */
+        .btn-login {
+            width: calc(50% - 5px);
+        }
+
+        .parsley-errors-list li {
+            list-style-type: none; /* Remove bullet points */
+            color: black; /* Set text color to red */
+            text-align: left;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header bg-info py-3">
+            <h4 class="text-white text-center mb-0">LOGIN</h4>
+        </div>
+        <div class="card-body">
+            <form id="formLogin">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="txtUsername" placeholder="Email Address" data-parsley-required-message="Please enter your username" required autocomplete="off">
+
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="txtPassword" placeholder="Password" data-parsley-required-message="Please enter your password" required autocomplete="off">
+                    <span id="lblError" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-secondary btn-block" onclick="window.location.href='cancel.php'">Cancel</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-info btn-block" id="btnLogin">Submit</button>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="#" class="text-info">Forgot Password?</a>
+                </div>
+                <div class="text-center mt-3">
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("btnLogin").addEventListener("click", function() {
+        // Set the username and password
+        var username = 'sandeep10@gmail.com';
+        var password = 'sandeep@123';
+
+        // Redirect to index.html
+        window.location.href = 'index.html';
+        });
+    });
+    </script>
+
+</body>
+</html>
